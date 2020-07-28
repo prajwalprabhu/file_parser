@@ -1,11 +1,11 @@
 import pickle
-import time
+
 
 
 def dump(file_path, hide_name):
     with open(file_path, "rb") as e:
     	data = e.read()
-    	# print(data)
+    	
 
     with open(hide_name, 'wb') as f:
     	pickle.dump(data, f)
